@@ -18,7 +18,7 @@ jobs:
         run:
           npm run build
       - name: Deploy pages
-        uses: crazy-max/ghaction-github-pages@v2.3.0
+        uses: actions/deploy-pages@v3 
         with:
           build_dir: dist
         env:
