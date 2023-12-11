@@ -19,7 +19,5 @@ jobs:
           npm run build
       - name: Deploy pages
         uses: actions/deploy-pages@v3 
-        with:
-          build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
