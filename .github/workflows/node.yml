@@ -15,5 +15,3 @@ jobs:
           npm install
       - run:
           npm run build
-  deploy:
-    needs: build
